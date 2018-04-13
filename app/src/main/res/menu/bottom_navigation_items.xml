@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_cover_letter"
+        android:icon="@drawable/ic_cover_letter"
+        android:title="@string/menu_cover_letter" />
+    <item
+        android:id="@+id/menu_resume"
+        android:icon="@drawable/ic_resume"
+        android:title="@string/menu_resume" />
+</menu>

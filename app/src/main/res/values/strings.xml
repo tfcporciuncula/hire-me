@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Hire Me!</string>
+
+    <!-- Bottom navigation -->
+    <string name="menu_cover_letter">Cover Letter</string>
+    <string name="menu_resume">Resume</string>
 </resources>
