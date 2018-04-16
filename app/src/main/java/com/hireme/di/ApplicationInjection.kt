@@ -1,11 +1,12 @@
 package com.hireme.di
 
 import android.content.Context
-import com.hireme.HireMeApplication
 import com.hireme.EmailManager
+import com.hireme.HireMeApplication
 import com.hireme.coverletter.CoverLetterComponent
 import com.hireme.coverletter.CoverLetterModule
-import com.hireme.resume.ResumeViewModel
+import com.hireme.resume.ResumeComponent
+import com.hireme.resume.ResumeModule
 import dagger.Component
 import dagger.Module
 import dagger.Provides
@@ -32,5 +33,5 @@ class ApplicationModule(private val application: HireMeApplication) {
 interface ApplicationComponent {
 
     fun plus(module: CoverLetterModule): CoverLetterComponent
-    fun inject(viewModel: ResumeViewModel)
+    fun plus(module: ResumeModule): ResumeComponent
 }

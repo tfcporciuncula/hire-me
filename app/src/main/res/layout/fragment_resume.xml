@@ -9,7 +9,10 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:itemCount="10"
+        tools:listitem="@android:layout/simple_list_item_1" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/hireMeButton"

@@ -1,5 +1,6 @@
 package com.hireme.resume
 
+import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -9,6 +10,9 @@ import android.view.ViewGroup
 import com.hireme.R
 import kotlinx.android.synthetic.main.fragment_resume.*
 
+/**
+ * A fragment that presents a list of resume items.
+ */
 class ResumeFragment : Fragment() {
 
     companion object {
@@ -26,6 +30,9 @@ class ResumeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        viewModel.loadResumeItems().observe(this, Observer {
+            recyclerView.adapter = ResumeAdapter(it!!)
+        })
         hireMeButton.setOnClickListener { viewModel.startYouAreHiredEmail() }
     }
 }

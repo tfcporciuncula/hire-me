@@ -9,7 +9,7 @@ import dagger.Subcomponent
 
 /**
  * Yes, Dagger is definitely overkill here. I just wanted to illustrate how it looks interesting when you use a
- * subcomponent to inject a presenter (and its dependencies).
+ * subcomponent to inject a presenter (and its dependencies) - it's a nice way to attach the view to the presenter.
  */
 
 @FragmentScope

@@ -7,7 +7,7 @@ import javax.inject.Scope
  */
 
 @Scope
-annotation class ActivityScope
+annotation class ViewModelScope
 
 @Scope
 annotation class FragmentScope
