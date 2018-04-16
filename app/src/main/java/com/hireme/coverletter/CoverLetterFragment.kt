@@ -8,8 +8,10 @@ import android.support.v7.graphics.Palette
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.hireme.HireMeApplication
 import com.hireme.R
 import kotlinx.android.synthetic.main.fragment_cover_letter.*
+import javax.inject.Inject
 
 /**
  * A fragment with a nice collapsing toolbar. And my cover letter.
@@ -22,9 +24,15 @@ class CoverLetterFragment : Fragment(), CoverLetter.View {
         fun newInstance() = CoverLetterFragment()
     }
 
-    // Dagger would make things prettier here
-    private val presenter: CoverLetter.Presenter by lazy {
-        CoverLetterPresenter(this, CoverLetterRepository(context!!))
+    @Inject
+    lateinit var presenter: CoverLetter.Presenter
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        HireMeApplication
+            .getComponent(requireContext())
+            .plus(CoverLetterModule(this))
+            .inject(this)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -56,7 +64,7 @@ class CoverLetterFragment : Fragment(), CoverLetter.View {
     }
 
     private fun setContentScrimColor() {
-        val defaultScrimColor = ContextCompat.getColor(context!!, R.color.colorAccent)
+        val defaultScrimColor = ContextCompat.getColor(requireContext(), R.color.colorAccent)
         val bitmap = (pictureImageView.drawable as BitmapDrawable).bitmap
         Palette.from(bitmap).generate {
             collapsingToolbarLayout.setContentScrimColor(it.getMutedColor(defaultScrimColor))
