@@ -44,4 +44,6 @@ class ResumeViewModel(application: Application) : AndroidViewModel(application) 
     fun openStackoverflow() = externalUrlManager.openStackoverflow()
 
     fun openGithub() = externalUrlManager.openGithub()
+
+    fun openUrl(url: String) = externalUrlManager.openUrl(url)
 }

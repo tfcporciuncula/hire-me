@@ -7,6 +7,7 @@ import android.support.annotation.DrawableRes
  */
 data class ResumeItem(
     val title: String,
+    val dates: String,
     val description: String,
     @DrawableRes val imageResId: Int,
     val url: String

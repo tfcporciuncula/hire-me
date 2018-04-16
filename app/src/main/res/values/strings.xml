@@ -7,15 +7,22 @@
 
     <!-- Cover Letter -->
     <string name="cover_letter_title">Cover Letter</string>
-    <string name="cover_letter_image_description">Fred\'s picture</string>
+    <string name="cover_letter_image_description">Fred\'s picture at his work desk</string>
     <string name="hire_me_button_text">Hire me!</string>
     <string name="cover_letter">Lorem ipsum dolor sit amet, sed ne eligendi officiis forensibus, vel quot sanctus ei, nam id putent convenire. Vis eligendi epicurei expetendis ex, ei diam theophrastus vis. Pri regione saperet tincidunt ei. Ius ne vivendo accommodare, possit fuisset omittantur duo id.
         \n\nVix an suas oratio disputationi, pro at efficiendi intellegam, pro possit deseruisse eu. Ei est eros verear officiis. Quot meis aliquando ius cu, mel ea esse gloriatur, vix summo nostrud constituam id. Ut tacimates accusamus torquatos vim, semper aliquando efficiendi in vim, id nec causae probatus. Ut has diam veniam, tempor praesent id duo, corpora probatus platonem cum ea.
         \n\nVidit persius in eum, vix eleifend persecuti disputando cu, dicat democritum mea ex. Atqui simul ludus et eos, an erant laoreet cum, alia menandri assueverit at nec. Minim dolor at qui, euismod salutandi contentiones id pri. Nam dolor scripta an, viderer patrioque in quo. Nec ut recteque ullamcorper.
         \n\nIn fabulas luptatum deterruisset pro. Simul appareat nam an, quidam detracto at mea. Sea ne quaeque voluptua. Sea fastidii theophrastus eu, ex vix duis erroribus, augue voluptatibus pro ex. Ne pri persius placerat, te eirmod nostrud mei.
-        \n\nHinc facer dissentias eos ne. In sonet officiis disputationi vim. Mea quaeque efficiendi repudiandae no, dolor audire apeirian ne duo, at quaeque minimum nam. Liber maiorum ne mel. No minim quaestio perpetua quo.</string>
+        \n\nHinc facer dissentias eos ne. In sonet officiis disputationi vim. Mea quaeque efficiendi repudiandae no, dolor audire apeirian ne duo, at quaeque minimum nam. Liber maiorum ne mel. No minim quaestio perpetua quo.
+    </string>
+
+    <!-- You are hired email -->
+    <string name="you_are_hired_email">tfcporciuncula@gmail.com</string>
+    <string name="you_are_hired_subject">You\'re hired!</string>
+    <string name="you_are_hired_email_error_message">It seems you have no email clients installed :(</string>
 
     <!-- Resume -->
+    <string name="resume_title">Resume</string>
     <string name="linkedin_image_description">LinkedIn</string>
     <string name="linkedin_url">https://www.linkedin.com/in/tfcporciuncula</string>
     <string name="stackoverflow_image_description">Stack Overflow</string>
@@ -23,8 +30,71 @@
     <string name="github_image_description">GitHub</string>
     <string name="github_url">https://github.com/tfcporciuncula</string>
 
-    <!-- You are hired email -->
-    <string name="you_are_hired_email">tfcporciuncula@gmail.com</string>
-    <string name="you_are_hired_subject">You\'re hired!</string>
-    <string name="you_are_hired_email_error_message">It seems you have no email clients installed :(</string>
+    <!-- Resume items -->
+    <!-- Quizlet -->
+    <string name="quizlet_title">Software Engineer @ Quizlet</string>
+    <string name="quizlet_dates">[contractor] Oct 2017 - Today (7 months)</string>
+    <string name="quizlet_description">Quizlet description!</string>
+    <string name="quizlet_url">https://play.google.com/store/apps/details?id=com.quizlet.quizletandroid</string>
+
+    <!-- Disney-ABC -->
+    <string name="abc_title">Software Engineer @ Disney-ABC</string>
+    <string name="abc_dates">[contractor] Jun 2016 - Sep 2017 (1 year 3 months)</string>
+    <string name="abc_description">ABC description!</string>
+    <string name="abc_url">https://play.google.com/store/apps/details?id=com.disney.datg.videoplatforms.android.abc</string>
+
+    <!-- ArcTouch -->
+    <string name="arctouch_title">Princ. Software Engineer @ ArcTouch</string>
+    <string name="arctouch_dates">May 2016 - Today (2 years)</string>
+    <string name="arctouch_description">ArcTouch description!</string>
+    <string name="arctouch_url">https://arctouch.com</string>
+
+    <!-- Softplan -->
+    <string name="softplan_title">R&amp;D Software Engineer @ Softplan</string>
+    <string name="softplan_dates">Jan 2015 - Apr 2016 (1 year 4 months)</string>
+    <string name="softplan_description">
+        • Worked on multiple projects to improve and maintain the company\'s in-house APIs and frameworks.
+        \n\n• Security team member, responsible for the security framework evolution as well as the development of automated solutions for security testing and auditing.
+        \n\n• Developed a Maven plugin for integration with the OWASP ZAP security tool.
+        \n\nTechnologies involved: Java, JavaScript, PostgreSQL, MySQL, build (Maven, Gradle), testing (JUnit, TestNG, Mockito), and continuous integration (Jenkins, SonarQube) frameworks and tools.
+    </string>
+    <string name="softplan_url">http://softplan.com.br</string>
+
+    <!-- ESIG -->
+    <string name="sig_title">Software Engineer @ ESIG</string>
+    <string name="sig_dates">Jun 2014 - Dec 2014 (7 months)</string>
+    <string name="sig_description">
+        Worked on the development and maintenance of the company\'s ERP systems related to academic activities, human resources and administration management.
+        \n\nTechnologies involved: J2EE, JBoss 4.2.2, JSF 1.2, RichFaces, EJB 2, Spring, Hibernate, PostgreSQL, JasperReports.
+    </string>
+    <string name="sig_url">https://www.esig.com.br</string>
+
+    <!-- Manolos -->
+    <string name="manolos_title">Software Engineer @ Manolos</string>
+    <string name="manolos_dates">Feb 2013 - May 2014 (1 year 4 months)</string>
+    <string name="manolos_description">
+        Manolos was a startup company created by me and two friends. We started developing Android applications, including the three most popular apps on Google Play related to our university. We then worked on several native mobile applications to extend and improve local business solutions.
+        \n\nTechnologies involved: Java, Android, Swift, iOS.
+    </string>
+    <string name="manolos_url">https://play.google.com/store/apps/developer?id=Manolos+Mobile</string>
+
+    <!-- Federal University of Rio Grande do Norte - UFRN -->
+    <string name="ufrn_title">Lab Intern @ Federal University of Rio Grande do Norte</string>
+    <string name="ufrn_dates">Feb 2013 - Feb 2014 (1 year 1 month)</string>
+    <string name="ufrn_description">
+        • Worked in the Industrial Computing Laboratory to develop software products - mainly based on Java Swing applications - to analyze the operation and management of industrial plants.
+        \n\n• Published a paper on the Brazilian Symposium on Intelligent Automation (SBAI 2013) and two more on the Brazilian Conference on Automation (CBA 2014).
+        \n\nTechnologies involved: Java, Swing, JFreeChart, Java RMI, PostgreSQL.
+    </string>
+    <string name="ufrn_url">http://lii.dca.ufrn.br/lii</string>
+
+    <!-- University of Delaware -->
+    <string name="delaware_title">Lab Intern @ University of Delaware</string>
+    <string name="delaware_dates">Jun 2012 - Dec 2012 (7 months)</string>
+    <string name="delaware_description">
+        • Research and development project to create a hardware prototype of a communication modem to perform wireless data transmission in the ocean.
+        \n\n• The prototype was built on a low-power applications processor based on an ARM and a DSP core, where most modulation algorithms were developed using the DSP Library by Texas Instruments.
+        \n\n• Presented a poster on the International Conference on Underwater Networks and Systems in Los Angeles, CA, and at the University of Delaware Research Foundation poster session.
+    </string>
+    <string name="delaware_url">http://www.ceoe.udel.edu</string>
 </resources>

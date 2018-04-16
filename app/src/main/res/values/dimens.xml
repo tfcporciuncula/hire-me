@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="tiny_margin">4dp</dimen>
+    <dimen name="half_standard_margin">8dp</dimen>
     <dimen name="standard_margin">16dp</dimen>
     <dimen name="large_margin">40dp</dimen>
 
@@ -14,5 +16,9 @@
     <dimen name="hire_me_button_text_size">18sp</dimen>
 
     <!-- Resume -->
+    <dimen name="resume_item_image_size">40dp</dimen>
+    <dimen name="resume_item_title_text_size">16sp</dimen>
+    <dimen name="resume_item_dates_text_size">12sp</dimen>
+    <dimen name="resume_item_description_text_size">14sp</dimen>
     <dimen name="social_link_image_height">80dp</dimen>
 </resources>

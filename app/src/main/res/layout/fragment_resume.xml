@@ -10,9 +10,12 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/tiny_margin"
+        android:paddingTop="@dimen/tiny_margin"
         app:layoutManager="android.support.v7.widget.LinearLayoutManager"
         tools:itemCount="10"
-        tools:listitem="@android:layout/simple_list_item_1" />
+        tools:listitem="@layout/item_resume" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/hireMeButton"

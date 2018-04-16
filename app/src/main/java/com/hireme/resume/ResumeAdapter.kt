@@ -4,12 +4,12 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.hireme.R
+import kotlinx.android.synthetic.main.item_resume.view.*
 import kotlinx.android.synthetic.main.item_social_links_resume.view.*
 
 /**
- * The adapter used for the resume list.
+ * The adapter used for the resume list. It has a different item in the end of the list.
  */
 class ResumeAdapter(
     private val viewModel: ResumeViewModel,
@@ -22,9 +22,26 @@ class ResumeAdapter(
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val linkedinImageView = itemView.linkedinImageView
-        val stackoverflowImageView = itemView.stackoverflowImageView
-        val githubImageView = itemView.githubImageView
+
+        fun bindSocialLinks(
+            stackoverflowClickListener: View.OnClickListener,
+            linkedinClickListener: View.OnClickListener,
+            githubClickListener: View.OnClickListener
+        ) {
+            itemView.stackoverflowImageView.setOnClickListener(stackoverflowClickListener)
+            itemView.linkedinImageView.setOnClickListener(linkedinClickListener)
+            itemView.githubImageView.setOnClickListener(githubClickListener)
+        }
+
+        fun bindResumeItem(resumeItem: ResumeItem, itemViewClickListener: View.OnClickListener) {
+            with(resumeItem) {
+                itemView.titleTextView.text = title
+                itemView.datesTextView.text = dates
+                itemView.descriptionTextView.text = description
+                itemView.imageView.setImageResource(imageResId)
+                itemView.setOnClickListener(itemViewClickListener)
+            }
+        }
     }
 
     override fun getItemViewType(position: Int): Int {
@@ -33,7 +50,7 @@ class ResumeAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutResId = if (viewType == RESUME_ITEM_VIEW_TYPE) {
-            android.R.layout.simple_list_item_1
+            R.layout.item_resume
         } else {
             R.layout.item_social_links_resume
         }
@@ -52,13 +69,18 @@ class ResumeAdapter(
     }
 
     private fun bindSocialLinks(holder: ViewHolder) {
-        holder.linkedinImageView.setOnClickListener { viewModel.openLinkedin() }
-        holder.stackoverflowImageView.setOnClickListener { viewModel.openStackoverflow() }
-        holder.githubImageView.setOnClickListener { viewModel.openGithub() }
+        holder.bindSocialLinks(View.OnClickListener {
+            viewModel.openStackoverflow()
+        }, View.OnClickListener {
+            viewModel.openLinkedin()
+        }, View.OnClickListener {
+            viewModel.openGithub()
+        })
     }
 
     private fun bindResumeItem(holder: ViewHolder, position: Int) {
-        (holder.itemView as TextView).text = resumeItems[position].title
+        val item = resumeItems[position]
+        holder.bindResumeItem(item, View.OnClickListener { viewModel.openUrl(item.url) })
     }
 
     private val Int.isLast get() = this == resumeItems.size

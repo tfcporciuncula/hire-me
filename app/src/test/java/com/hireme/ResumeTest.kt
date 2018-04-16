@@ -49,8 +49,8 @@ class ResumeTest {
     @Test
     fun shouldLoadResume() {
         val resumeItems = listOf(
-            ResumeItem("title", "description", R.drawable.ic_resume, "url"),
-            ResumeItem("title2", "description2", R.drawable.ic_resume, "url2")
+            ResumeItem("title", "dates", "description", R.drawable.ic_resume, "url"),
+            ResumeItem("title2", "dates", "description2", R.drawable.ic_resume, "url2")
         )
         given(resumeRepository.fetchResumeItems()).willReturn(resumeItems)
         val resumeItemsLiveData = viewModel.loadResumeItems()
@@ -73,5 +73,11 @@ class ResumeTest {
     fun openGithubTest() {
         viewModel.openGithub()
         verify(externalUrlManagerMock).openGithub()
+    }
+
+    @Test
+    fun openUrlTest() {
+        viewModel.openUrl("url")
+        verify(externalUrlManagerMock).openUrl("url")
     }
 }

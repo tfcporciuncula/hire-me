@@ -16,6 +16,8 @@ class ExternalUrlManager(private val context: Context) {
 
     fun openGithub() = openBrowserFor(context.getString(R.string.github_url))
 
+    fun openUrl(url: String) = openBrowserFor(url)
+
     private fun openBrowserFor(url: String) {
         val intent = Intent(Intent.ACTION_VIEW).apply {
             data = Uri.parse(url)
