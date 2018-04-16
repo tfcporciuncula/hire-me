@@ -22,7 +22,5 @@ class ResumeModule {
 
     @Provides
     @ViewModelScope
-    fun provideResumeRepository(context: Context): ResumeRepository {
-        return ResumeRepository(context)
-    }
+    fun provideResumeRepository(context: Context) = ResumeRepository(context)
 }

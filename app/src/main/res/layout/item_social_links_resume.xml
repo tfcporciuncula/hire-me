@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/stackoverflowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/social_link_image_height"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:contentDescription="@string/stackoverflow_image_description"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:paddingBottom="@dimen/standard_margin"
+        android:paddingTop="@dimen/standard_margin"
+        android:scaleType="fitCenter"
+        android:src="@drawable/stackoverflow" />
+
+    <ImageView
+        android:id="@+id/linkedinImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/social_link_image_height"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:contentDescription="@string/linkedin_image_description"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:paddingBottom="@dimen/standard_margin"
+        android:paddingTop="@dimen/standard_margin"
+        android:scaleType="fitCenter"
+        android:src="@drawable/linkedin" />
+
+    <ImageView
+        android:id="@+id/githubImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/social_link_image_height"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:contentDescription="@string/github_image_description"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:paddingBottom="@dimen/standard_margin"
+        android:paddingTop="@dimen/standard_margin"
+        android:scaleType="fitCenter"
+        android:src="@drawable/github" />
+
+</LinearLayout>

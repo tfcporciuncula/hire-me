@@ -1,7 +1,7 @@
 package com.hireme.coverletter
 
 import android.content.Context
-import com.hireme.EmailManager
+import com.hireme.util.EmailManager
 import com.hireme.di.FragmentScope
 import dagger.Module
 import dagger.Provides

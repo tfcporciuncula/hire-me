@@ -1,6 +1,6 @@
 package com.hireme.coverletter
 
-import com.hireme.EmailManager
+import com.hireme.util.EmailManager
 
 
 /**

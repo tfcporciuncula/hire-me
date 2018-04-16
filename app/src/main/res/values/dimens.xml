@@ -12,4 +12,7 @@
     <dimen name="hire_me_button_corner_radius">24dp</dimen>
     <dimen name="hire_me_button_elevation">6dp</dimen>
     <dimen name="hire_me_button_text_size">18sp</dimen>
+
+    <!-- Resume -->
+    <dimen name="social_link_image_height">80dp</dimen>
 </resources>

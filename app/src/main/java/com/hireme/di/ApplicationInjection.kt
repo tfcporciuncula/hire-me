@@ -1,7 +1,8 @@
 package com.hireme.di
 
 import android.content.Context
-import com.hireme.EmailManager
+import com.hireme.util.EmailManager
+import com.hireme.util.ExternalUrlManager
 import com.hireme.HireMeApplication
 import com.hireme.coverletter.CoverLetterComponent
 import com.hireme.coverletter.CoverLetterModule
@@ -13,7 +14,7 @@ import dagger.Provides
 import javax.inject.Singleton
 
 /**
- * Anything Dagger related that applies to the whole application would go here.
+ * Anything Dagger related that applies to the whole application goes here.
  */
 
 @Module
@@ -26,6 +27,10 @@ class ApplicationModule(private val application: HireMeApplication) {
     @Provides
     @Singleton
     fun provideEmailManager(context: Context) = EmailManager(context)
+
+    @Provides
+    @Singleton
+    fun provideExternalUrlManager(context: Context) = ExternalUrlManager(context)
 }
 
 @Singleton

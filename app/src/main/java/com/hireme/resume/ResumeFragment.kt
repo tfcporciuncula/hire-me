@@ -21,7 +21,9 @@ class ResumeFragment : Fragment() {
         fun newInstance() = ResumeFragment()
     }
 
-    private val viewModel by lazy { ViewModelProviders.of(this).get(ResumeViewModel::class.java) }
+    private val viewModel by lazy {
+        ViewModelProviders.of(this).get(ResumeViewModel::class.java).apply { init() }
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_resume, container, false)
@@ -31,7 +33,7 @@ class ResumeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.loadResumeItems().observe(this, Observer {
-            recyclerView.adapter = ResumeAdapter(it!!)
+            recyclerView.adapter = ResumeAdapter(viewModel, it!!)
         })
         hireMeButton.setOnClickListener { viewModel.startYouAreHiredEmail() }
     }

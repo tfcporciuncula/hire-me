@@ -4,7 +4,8 @@ import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
-import com.hireme.EmailManager
+import com.hireme.util.EmailManager
+import com.hireme.util.ExternalUrlManager
 import com.hireme.HireMeApplication
 import javax.inject.Inject
 
@@ -19,11 +20,14 @@ class ResumeViewModel(application: Application) : AndroidViewModel(application) 
     @Inject
     lateinit var emailManager: EmailManager
 
-    val resumeItems = MutableLiveData<List<ResumeItem>>()
+    @Inject
+    lateinit var externalUrlManager: ExternalUrlManager
 
-    init {
+    private val resumeItems = MutableLiveData<List<ResumeItem>>()
+
+    fun init() {
         HireMeApplication
-            .getComponent(application.applicationContext)
+            .getComponent(getApplication())
             .plus(ResumeModule())
             .inject(this)
     }
@@ -34,4 +38,10 @@ class ResumeViewModel(application: Application) : AndroidViewModel(application) 
     }
 
     fun startYouAreHiredEmail() = emailManager.startYouAreHiredEmail()
+
+    fun openLinkedin() = externalUrlManager.openLinkedin()
+
+    fun openStackoverflow() = externalUrlManager.openStackoverflow()
+
+    fun openGithub() = externalUrlManager.openGithub()
 }

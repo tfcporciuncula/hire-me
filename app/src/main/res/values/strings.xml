@@ -14,4 +14,17 @@
         \n\nVidit persius in eum, vix eleifend persecuti disputando cu, dicat democritum mea ex. Atqui simul ludus et eos, an erant laoreet cum, alia menandri assueverit at nec. Minim dolor at qui, euismod salutandi contentiones id pri. Nam dolor scripta an, viderer patrioque in quo. Nec ut recteque ullamcorper.
         \n\nIn fabulas luptatum deterruisset pro. Simul appareat nam an, quidam detracto at mea. Sea ne quaeque voluptua. Sea fastidii theophrastus eu, ex vix duis erroribus, augue voluptatibus pro ex. Ne pri persius placerat, te eirmod nostrud mei.
         \n\nHinc facer dissentias eos ne. In sonet officiis disputationi vim. Mea quaeque efficiendi repudiandae no, dolor audire apeirian ne duo, at quaeque minimum nam. Liber maiorum ne mel. No minim quaestio perpetua quo.</string>
+
+    <!-- Resume -->
+    <string name="linkedin_image_description">LinkedIn</string>
+    <string name="linkedin_url">https://www.linkedin.com/in/tfcporciuncula</string>
+    <string name="stackoverflow_image_description">Stack Overflow</string>
+    <string name="stackoverflow_url">https://stackoverflow.com/users/2352699/thiago-porciúncula</string>
+    <string name="github_image_description">GitHub</string>
+    <string name="github_url">https://github.com/tfcporciuncula</string>
+
+    <!-- You are hired email -->
+    <string name="you_are_hired_email">tfcporciuncula@gmail.com</string>
+    <string name="you_are_hired_subject">You\'re hired!</string>
+    <string name="you_are_hired_email_error_message">It seems you have no email clients installed :(</string>
 </resources>

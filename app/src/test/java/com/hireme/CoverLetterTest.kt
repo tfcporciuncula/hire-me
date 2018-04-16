@@ -3,6 +3,7 @@ package com.hireme
 import com.hireme.coverletter.CoverLetter
 import com.hireme.coverletter.CoverLetterPresenter
 import com.hireme.coverletter.CoverLetterRepository
+import com.hireme.util.EmailManager
 import org.junit.Before
 import org.junit.Test
 import org.mockito.BDDMockito.given
@@ -27,9 +28,7 @@ class CoverLetterTest {
     private val presenter get() = CoverLetterPresenter(view, repository, emailManager)
 
     @Before
-    fun setup() {
-        MockitoAnnotations.initMocks(this)
-    }
+    fun setup() = MockitoAnnotations.initMocks(this)
 
     @Test
     fun shouldLoadCoverLetter() {
