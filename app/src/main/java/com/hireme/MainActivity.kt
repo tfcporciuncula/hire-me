@@ -5,7 +5,8 @@ import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.hireme.coverletter.CoverLetterFragment
-import kotlinx.android.synthetic.main.activity_fred.*
+import com.hireme.resume.ResumeFragment
+import kotlinx.android.synthetic.main.activity_main.*
 import timber.log.Timber
 
 /**
@@ -14,11 +15,11 @@ import timber.log.Timber
  * I decided to manually manage the fragment transactions - a [ViewPager] here would've been overkill IMHO. I added a
  * test to help with the fragments management.
  */
-class FredActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fred)
+        setContentView(R.layout.activity_main)
 
         setupBottomNavigation()
         setupFragments()

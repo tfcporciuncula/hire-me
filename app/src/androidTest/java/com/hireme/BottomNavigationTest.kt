@@ -22,7 +22,7 @@ import org.junit.runner.RunWith
 class BottomNavigationTest {
 
     @get:Rule
-    val activityTestRule = ActivityTestRule(FredActivity::class.java)
+    val activityTestRule = ActivityTestRule(MainActivity::class.java)
 
     @Test
     fun shouldShowTwoNavigationItems() {
