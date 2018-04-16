@@ -5,6 +5,7 @@ import com.hireme.HireMeApplication
 import com.hireme.EmailManager
 import com.hireme.coverletter.CoverLetterComponent
 import com.hireme.coverletter.CoverLetterModule
+import com.hireme.resume.ResumeViewModel
 import dagger.Component
 import dagger.Module
 import dagger.Provides
@@ -31,4 +32,5 @@ class ApplicationModule(private val application: HireMeApplication) {
 interface ApplicationComponent {
 
     fun plus(module: CoverLetterModule): CoverLetterComponent
+    fun inject(viewModel: ResumeViewModel)
 }

@@ -17,7 +17,5 @@ class CoverLetterPresenter(
         view.showCoverLetter(coverLetterContent)
     }
 
-    override fun startYouAreHiredEmail() {
-        emailManager.startYouAreHiredEmail()
-    }
+    override fun startYouAreHiredEmail() = emailManager.startYouAreHiredEmail()
 }
