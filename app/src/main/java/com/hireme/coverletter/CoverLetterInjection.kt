@@ -1,6 +1,7 @@
 package com.hireme.coverletter
 
 import android.content.Context
+import com.hireme.EmailManager
 import com.hireme.di.FragmentScope
 import dagger.Module
 import dagger.Provides
@@ -22,13 +23,16 @@ class CoverLetterModule(private val view: CoverLetter.View) {
 
     @Provides
     @FragmentScope
-    fun provideCoverLetterPresenter(repository: CoverLetter.Repository): CoverLetter.Presenter {
-        return CoverLetterPresenter(view, repository)
+    fun provideCoverLetterPresenter(
+        repository: CoverLetterRepository,
+        emailManager: EmailManager
+    ): CoverLetter.Presenter {
+        return CoverLetterPresenter(view, repository, emailManager)
     }
 
     @Provides
     @FragmentScope
-    fun provideCoverLetterRepository(context: Context): CoverLetter.Repository {
+    fun provideCoverLetterRepository(context: Context): CoverLetterRepository {
         return CoverLetterRepository(context)
     }
 }

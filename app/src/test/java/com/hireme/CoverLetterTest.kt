@@ -2,6 +2,7 @@ package com.hireme
 
 import com.hireme.coverletter.CoverLetter
 import com.hireme.coverletter.CoverLetterPresenter
+import com.hireme.coverletter.CoverLetterRepository
 import org.junit.Before
 import org.junit.Test
 import org.mockito.BDDMockito.given
@@ -18,9 +19,12 @@ class CoverLetterTest {
     private lateinit var view: CoverLetter.View
 
     @Mock
-    private lateinit var repository: CoverLetter.Repository
+    private lateinit var repository: CoverLetterRepository
 
-    private val presenter get() = CoverLetterPresenter(view, repository)
+    @Mock
+    private lateinit var emailManager: EmailManager
+
+    private val presenter get() = CoverLetterPresenter(view, repository, emailManager)
 
     @Before
     fun setup() {

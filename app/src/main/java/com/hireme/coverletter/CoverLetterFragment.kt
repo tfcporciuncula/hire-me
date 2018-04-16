@@ -45,6 +45,7 @@ class CoverLetterFragment : Fragment(), CoverLetter.View {
         setContentScrimColor()
 
         presenter.loadCoverLetter()
+        hireMeButton.setOnClickListener { presenter.startYouAreHiredEmail() }
     }
 
     private fun setupHireMeButtonAnimation() {

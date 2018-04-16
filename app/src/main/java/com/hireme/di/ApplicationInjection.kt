@@ -2,9 +2,9 @@ package com.hireme.di
 
 import android.content.Context
 import com.hireme.HireMeApplication
+import com.hireme.EmailManager
 import com.hireme.coverletter.CoverLetterComponent
 import com.hireme.coverletter.CoverLetterModule
-import com.hireme.coverletter.CoverLetterRepository
 import dagger.Component
 import dagger.Module
 import dagger.Provides
@@ -23,7 +23,7 @@ class ApplicationModule(private val application: HireMeApplication) {
 
     @Provides
     @Singleton
-    fun provideCoverLetterRepository(context: Context) = CoverLetterRepository(context)
+    fun provideEmailManager(context: Context) = EmailManager(context)
 }
 
 @Singleton

@@ -11,9 +11,6 @@ interface CoverLetter {
 
     interface Presenter {
         fun loadCoverLetter()
-    }
-
-    interface Repository {
-        fun fetchCoverLetterContent(): String
+        fun startYouAreHiredEmail()
     }
 }
