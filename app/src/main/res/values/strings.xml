@@ -4,4 +4,14 @@
     <!-- Bottom navigation -->
     <string name="menu_cover_letter">Cover Letter</string>
     <string name="menu_resume">Resume</string>
+
+    <!-- Cover Letter -->
+    <string name="cover_letter_title">Cover Letter</string>
+    <string name="cover_letter_image_description">Fred\'s picture</string>
+    <string name="hire_me_button_text">Hire me!</string>
+    <string name="cover_letter">Lorem ipsum dolor sit amet, sed ne eligendi officiis forensibus, vel quot sanctus ei, nam id putent convenire. Vis eligendi epicurei expetendis ex, ei diam theophrastus vis. Pri regione saperet tincidunt ei. Ius ne vivendo accommodare, possit fuisset omittantur duo id.
+        \n\nVix an suas oratio disputationi, pro at efficiendi intellegam, pro possit deseruisse eu. Ei est eros verear officiis. Quot meis aliquando ius cu, mel ea esse gloriatur, vix summo nostrud constituam id. Ut tacimates accusamus torquatos vim, semper aliquando efficiendi in vim, id nec causae probatus. Ut has diam veniam, tempor praesent id duo, corpora probatus platonem cum ea.
+        \n\nVidit persius in eum, vix eleifend persecuti disputando cu, dicat democritum mea ex. Atqui simul ludus et eos, an erant laoreet cum, alia menandri assueverit at nec. Minim dolor at qui, euismod salutandi contentiones id pri. Nam dolor scripta an, viderer patrioque in quo. Nec ut recteque ullamcorper.
+        \n\nIn fabulas luptatum deterruisset pro. Simul appareat nam an, quidam detracto at mea. Sea ne quaeque voluptua. Sea fastidii theophrastus eu, ex vix duis erroribus, augue voluptatibus pro ex. Ne pri persius placerat, te eirmod nostrud mei.
+        \n\nHinc facer dissentias eos ne. In sonet officiis disputationi vim. Mea quaeque efficiendi repudiandae no, dolor audire apeirian ne duo, at quaeque minimum nam. Liber maiorum ne mel. No minim quaestio perpetua quo.</string>
 </resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="large_margin">40dp</dimen>
+
+    <!-- Cover Letter -->
+    <dimen name="cover_letter_title_margin_bottom">64dp</dimen>
+    <dimen name="cover_letter_picture_height">256dp</dimen>
+    <dimen name="cover_letter_text_size">16sp</dimen>
+    <dimen name="cover_letter_line_spacing_extra">2sp</dimen>
+    <dimen name="hire_me_button_height">48dp</dimen>
+    <dimen name="hire_me_button_corner_radius">24dp</dimen>
+    <dimen name="hire_me_button_elevation">6dp</dimen>
+    <dimen name="hire_me_button_text_size">18sp</dimen>
+</resources>

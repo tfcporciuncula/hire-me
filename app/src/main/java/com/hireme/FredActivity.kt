@@ -3,7 +3,8 @@ package com.hireme
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_main.*
+import com.hireme.coverletter.CoverLetterFragment
+import kotlinx.android.synthetic.main.activity_fred.*
 import timber.log.Timber
 
 /**
@@ -14,7 +15,7 @@ class FredActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_fred)
 
         setupBottomNavigation()
         setupFragments()
