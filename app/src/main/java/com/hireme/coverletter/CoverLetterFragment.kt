@@ -11,6 +11,9 @@ import android.view.ViewGroup
 import com.hireme.R
 import kotlinx.android.synthetic.main.fragment_cover_letter.*
 
+/**
+ * A fragment with a nice collapsing toolbar. And my cover letter.
+ */
 class CoverLetterFragment : Fragment(), CoverLetter.View {
 
     companion object {

@@ -1,6 +1,7 @@
 package com.hireme
 
 import android.os.Bundle
+import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.hireme.coverletter.CoverLetterFragment
@@ -8,8 +9,10 @@ import kotlinx.android.synthetic.main.activity_fred.*
 import timber.log.Timber
 
 /**
- * My second name is Frederico, so people actually call me Fred. And I like these kinds of comments on top of classes.
- * Not really a fan of comments in the middle of the code, though, I'm with Uncle Bob on that one.
+ * A simple activity with a bottom navigation view that switches between two fragments.
+ *
+ * I decided to manually manage the fragment transactions - a [ViewPager] here would've been overkill IMHO. I added a
+ * test to help with the fragments management.
  */
 class FredActivity : AppCompatActivity() {
 
