@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbarColor"
+            app:title="@string/resume_title" />
+
+    </android.support.design.widget.AppBarLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
@@ -14,6 +29,7 @@
         android:paddingBottom="@dimen/tiny_margin"
         android:paddingTop="@dimen/tiny_margin"
         app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:itemCount="10"
         tools:listitem="@layout/item_resume" />
 
@@ -23,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/standard_margin"
         android:src="@drawable/ic_email"
-        app:layout_anchor="@id/recyclerView"
-        app:layout_anchorGravity="bottom|end" />
+        app:layout_anchor="@id/toolbar"
+        app:layout_anchorGravity="bottom|right|end" />
 
 </android.support.design.widget.CoordinatorLayout>

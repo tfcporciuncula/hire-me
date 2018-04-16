@@ -1,10 +1,7 @@
 package com.hireme.coverletter
 
-import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v4.content.ContextCompat
-import android.support.v7.graphics.Palette
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,7 +39,6 @@ class CoverLetterFragment : Fragment(), CoverLetter.View {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupHireMeButtonAnimation()
-        setContentScrimColor()
 
         presenter.loadCoverLetter()
         hireMeButton.setOnClickListener { presenter.startYouAreHiredEmail() }
@@ -62,14 +58,6 @@ class CoverLetterFragment : Fragment(), CoverLetter.View {
 
     override fun showCoverLetter(coverLetterContent: String) {
         coverLetterTextView.text = coverLetterContent
-    }
-
-    private fun setContentScrimColor() {
-        val defaultScrimColor = ContextCompat.getColor(requireContext(), R.color.colorAccent)
-        val bitmap = (pictureImageView.drawable as BitmapDrawable).bitmap
-        Palette.from(bitmap).generate {
-            collapsingToolbarLayout.setContentScrimColor(it.getMutedColor(defaultScrimColor))
-        }
     }
 }
 
