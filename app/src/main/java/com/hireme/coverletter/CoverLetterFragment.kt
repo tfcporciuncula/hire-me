@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import com.hireme.HireMeApplication
 import com.hireme.R
 import kotlinx.android.synthetic.main.fragment_cover_letter.*
@@ -39,6 +40,7 @@ class CoverLetterFragment : Fragment(), CoverLetter.View {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupHireMeButtonAnimation()
+        loadImages()
 
         presenter.loadCoverLetter()
         hireMeButton.setOnClickListener { presenter.startYouAreHiredEmail() }
@@ -54,6 +56,11 @@ class CoverLetterFragment : Fragment(), CoverLetter.View {
                 hireMeButton.fadeIn()
             }
         }
+    }
+
+    private fun loadImages() {
+        Glide.with(this).load(R.drawable.desk).into(pictureImageView)
+        Glide.with(this).load(R.drawable.signature).into(signatureImageView)
     }
 
     override fun showCoverLetter(coverLetterContent: String) {

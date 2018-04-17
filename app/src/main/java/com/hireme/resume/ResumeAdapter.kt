@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import com.hireme.R
 import kotlinx.android.synthetic.main.item_resume.view.*
 import kotlinx.android.synthetic.main.item_social_links_resume.view.*
@@ -28,8 +29,13 @@ class ResumeAdapter(
             linkedinClickListener: View.OnClickListener,
             githubClickListener: View.OnClickListener
         ) {
+            Glide.with(itemView).load(R.drawable.stackoverflow).into(itemView.stackoverflowImageView)
             itemView.stackoverflowImageView.setOnClickListener(stackoverflowClickListener)
+
+            Glide.with(itemView).load(R.drawable.linkedin).into(itemView.linkedinImageView)
             itemView.linkedinImageView.setOnClickListener(linkedinClickListener)
+
+            Glide.with(itemView).load(R.drawable.github).into(itemView.githubImageView)
             itemView.githubImageView.setOnClickListener(githubClickListener)
         }
 
@@ -38,7 +44,7 @@ class ResumeAdapter(
                 itemView.titleTextView.text = title
                 itemView.datesTextView.text = dates
                 itemView.descriptionTextView.text = description
-                itemView.imageView.setImageResource(imageResId)
+                Glide.with(itemView).load(imageResId).into(itemView.imageView)
                 itemView.setOnClickListener(itemViewClickListener)
             }
         }

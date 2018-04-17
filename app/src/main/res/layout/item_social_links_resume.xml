@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/tiny_margin"
@@ -18,7 +19,7 @@
         android:paddingBottom="@dimen/standard_margin"
         android:paddingTop="@dimen/standard_margin"
         android:scaleType="fitCenter"
-        android:src="@drawable/stackoverflow" />
+        tools:src="@drawable/stackoverflow" />
 
     <ImageView
         android:id="@+id/linkedinImageView"
@@ -33,7 +34,7 @@
         android:paddingBottom="@dimen/standard_margin"
         android:paddingTop="@dimen/standard_margin"
         android:scaleType="fitCenter"
-        android:src="@drawable/linkedin" />
+        tools:src="@drawable/linkedin" />
 
     <ImageView
         android:id="@+id/githubImageView"
@@ -48,6 +49,6 @@
         android:paddingBottom="@dimen/standard_margin"
         android:paddingTop="@dimen/standard_margin"
         android:scaleType="fitCenter"
-        android:src="@drawable/github" />
+        tools:src="@drawable/github" />
 
 </LinearLayout>

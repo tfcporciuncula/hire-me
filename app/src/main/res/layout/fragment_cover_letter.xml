@@ -27,8 +27,8 @@
                 android:layout_height="@dimen/cover_letter_picture_height"
                 android:contentDescription="@string/cover_letter_image_description"
                 android:scaleType="centerCrop"
-                android:src="@drawable/desk"
-                app:layout_collapseMode="parallax" />
+                app:layout_collapseMode="parallax"
+                tools:src="@drawable/desk" />
 
             <android.support.v7.widget.Toolbar
                 android:layout_width="match_parent"
@@ -44,7 +44,6 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:requiresFadingEdge="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
@@ -65,13 +64,14 @@
                 tools:text="@string/cover_letter" />
 
             <ImageView
+                android:id="@+id/signatureImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/cover_letter_signature_height"
                 android:layout_marginTop="@dimen/half_standard_margin"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/cover_letter_signature_image_description"
                 android:scaleType="fitCenter"
-                android:src="@drawable/signature" />
+                tools:src="@drawable/signature" />
 
         </LinearLayout>
 
