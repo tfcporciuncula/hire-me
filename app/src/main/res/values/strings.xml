@@ -9,12 +9,16 @@
     <string name="cover_letter_title">Cover Letter</string>
     <string name="cover_letter_image_description">Fred\'s picture at his work desk</string>
     <string name="hire_me_button_text">Hire me!</string>
-    <string name="cover_letter">Lorem ipsum dolor sit amet, sed ne eligendi officiis forensibus, vel quot sanctus ei, nam id putent convenire. Vis eligendi epicurei expetendis ex, ei diam theophrastus vis. Pri regione saperet tincidunt ei. Ius ne vivendo accommodare, possit fuisset omittantur duo id.
-        \n\nVix an suas oratio disputationi, pro at efficiendi intellegam, pro possit deseruisse eu. Ei est eros verear officiis. Quot meis aliquando ius cu, mel ea esse gloriatur, vix summo nostrud constituam id. Ut tacimates accusamus torquatos vim, semper aliquando efficiendi in vim, id nec causae probatus. Ut has diam veniam, tempor praesent id duo, corpora probatus platonem cum ea.
-        \n\nVidit persius in eum, vix eleifend persecuti disputando cu, dicat democritum mea ex. Atqui simul ludus et eos, an erant laoreet cum, alia menandri assueverit at nec. Minim dolor at qui, euismod salutandi contentiones id pri. Nam dolor scripta an, viderer patrioque in quo. Nec ut recteque ullamcorper.
-        \n\nIn fabulas luptatum deterruisset pro. Simul appareat nam an, quidam detracto at mea. Sea ne quaeque voluptua. Sea fastidii theophrastus eu, ex vix duis erroribus, augue voluptatibus pro ex. Ne pri persius placerat, te eirmod nostrud mei.
-        \n\nHinc facer dissentias eos ne. In sonet officiis disputationi vim. Mea quaeque efficiendi repudiandae no, dolor audire apeirian ne duo, at quaeque minimum nam. Liber maiorum ne mel. No minim quaestio perpetua quo.
+    <string name="cover_letter">
+        Dear Blinkist,
+        \n\nI was super intrigued when I read that your app got a Google Material Design Award, but after a few seconds using it, it was super clear you deserved it. I fell in love with the “Start trial” button animation, and the first time I saw it perfectly aligning with the toolbar while filling the whole width of the screen following my scroll it made me think, “I really want to work with them. And I really need to see the code behind this”.
+        \n\nI’ve been happily working with Android for a while now. I started with many small apps for my university and local businesses. Then I joined ArcTouch and had the opportunity to work as a contractor on great Android projects, one of them being Disney-ABC, where we built the app from scratch in Kotlin - and that was before Google\'s official announcement to support the language!
+        \n\nCurrently, I work as an Android dev for Quizlet. I’m familiar with the challenges and struggles of trying to improve an already successful app to increase growth and monetization results even further. It’s always a great feeling when our changes have a meaningful impact on the product and I learned how important measuring results is in order to make sure we’re making the right decisions.
+        \n\nI actually created a resume app (is that a thing?) inspired on Blinkist’s own look and feel and I’d love if you could take a look. Even though it’s super simple, I tried to write most of the code as if it was a real app so you can take a peek on how I code.
+        \n\nI look forward to hearing from you soon,
+        \n\n\nThiago Frederico Costa Porciúncula
     </string>
+    <string name="cover_letter_signature_image_description">Fred\'s signature</string>
 
     <!-- You are hired email -->
     <string name="you_are_hired_email">tfcporciuncula@gmail.com</string>

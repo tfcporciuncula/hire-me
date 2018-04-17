@@ -50,6 +50,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:paddingBottom="@dimen/standard_margin"
             android:paddingEnd="@dimen/standard_margin"
             android:paddingStart="@dimen/standard_margin"
@@ -62,6 +63,15 @@
                 android:lineSpacingExtra="@dimen/cover_letter_line_spacing_extra"
                 android:textSize="@dimen/cover_letter_text_size"
                 tools:text="@string/cover_letter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/cover_letter_signature_height"
+                android:layout_marginTop="@dimen/half_standard_margin"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/cover_letter_signature_image_description"
+                android:scaleType="fitCenter"
+                android:src="@drawable/signature" />
 
         </LinearLayout>
 
