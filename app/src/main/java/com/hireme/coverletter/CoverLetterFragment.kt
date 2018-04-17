@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.text.Html
 import android.text.Spanned
+import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -68,6 +69,7 @@ class CoverLetterFragment : Fragment(), CoverLetter.View {
 
     override fun showCoverLetter(coverLetterContent: String) {
         coverLetterTextView.text = coverLetterContent.fromHtml()
+        coverLetterTextView.movementMethod = LinkMovementMethod.getInstance()
     }
 }
 
