@@ -2,7 +2,6 @@ package com.hireme.coverletter
 
 import com.hireme.util.EmailManager
 
-
 /**
  * An extremely simple presenter that fetches data from a repository and passes it along to the view.
  */

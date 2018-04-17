@@ -1,7 +1,7 @@
 package com.hireme.coverletter
 
 /**
- * I'm most experienced with MVP, but I'm also fond of MVVM.
+ * MVP! I'm most experienced with MVP, but I'm also fond of MVVM.
  */
 interface CoverLetter {
 

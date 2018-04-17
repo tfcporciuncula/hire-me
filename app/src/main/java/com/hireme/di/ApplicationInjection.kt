@@ -17,6 +17,14 @@ import javax.inject.Singleton
  * Anything Dagger related that applies to the whole application goes here.
  */
 
+@Singleton
+@Component(modules = [ApplicationModule::class])
+interface ApplicationComponent {
+
+    fun plus(module: CoverLetterModule): CoverLetterComponent
+    fun plus(module: ResumeModule): ResumeComponent
+}
+
 @Module
 class ApplicationModule(private val application: HireMeApplication) {
 
@@ -31,12 +39,4 @@ class ApplicationModule(private val application: HireMeApplication) {
     @Provides
     @Singleton
     fun provideExternalUrlManager(context: Context) = ExternalUrlManager(context)
-}
-
-@Singleton
-@Component(modules = [ApplicationModule::class])
-interface ApplicationComponent {
-
-    fun plus(module: CoverLetterModule): CoverLetterComponent
-    fun plus(module: ResumeModule): ResumeComponent
 }
