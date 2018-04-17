@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/tiny_margin"
-    android:layout_marginEnd="@dimen/half_standard_margin"
-    android:layout_marginStart="@dimen/half_standard_margin"
-    android:layout_marginTop="@dimen/tiny_margin"
+    android:layout_marginBottom="@dimen/half_standard_margin"
+    android:layout_marginEnd="@dimen/standard_margin"
+    android:layout_marginStart="@dimen/standard_margin"
+    android:layout_marginTop="@dimen/half_standard_margin"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?attr/selectableItemBackground"
     app:cardCornerRadius="0dp">
 
     <RelativeLayout
-        android:id="@+id/imageParent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="@dimen/half_standard_margin">
 
         <ImageView
             android:id="@+id/imageView"

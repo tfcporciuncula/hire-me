@@ -38,19 +38,30 @@
     <!-- Quizlet -->
     <string name="quizlet_title">Software Engineer @ Quizlet</string>
     <string name="quizlet_dates">[contractor] Oct 2017 - Today (7 months)</string>
-    <string name="quizlet_description">Quizlet description!</string>
+    <string name="quizlet_description">
+        • Led the project in all three fronts: Android, iOS and web. We were 10 members total on the ArcTouch side.
+        \n\n• The team had recently adopted Kotlin, so I was responsible to help making sure the adoption was healthy and understood by the whole team.
+        \n\n• Worked on bugfixing and new features, such as Firebase Message Service integration for push notifications, support for the new notification channels, several animations for their new diagram feature integration, and Android Keystore integration.
+        \n\n• Once more, Dagger and RxJava are core building blocks of the app. Most of the code is still Java, but everything new we add is Kotlin.
+    </string>
     <string name="quizlet_url">https://play.google.com/store/apps/details?id=com.quizlet.quizletandroid</string>
 
     <!-- Disney-ABC -->
     <string name="abc_title">Software Engineer @ Disney-ABC</string>
     <string name="abc_dates">[contractor] Jun 2016 - Sep 2017 (1 year 3 months)</string>
-    <string name="abc_description">ABC description!</string>
+    <string name="abc_description">
+        • Worked initially to improve the old app they had and then we started a rewrite in Kotlin.
+        \n\n• Since we were building the app from scratch, we were able to choose a nice and modern stack to develop the app. We wrote our code following MVP, and we included Dagger and RxJava as core parts of the project.
+    </string>
     <string name="abc_url">https://play.google.com/store/apps/details?id=com.disney.datg.videoplatforms.android.abc</string>
 
     <!-- ArcTouch -->
     <string name="arctouch_title">Princ. Software Engineer @ ArcTouch</string>
     <string name="arctouch_dates">May 2016 - Today (2 years)</string>
-    <string name="arctouch_description">ArcTouch description!</string>
+    <string name="arctouch_description">
+        At ArcTouch, we work as contractors on mobile projects. We become part of the client\'s team during the project duration, and that lead us to live many different project experiences.
+        \n\nAs a Principal, it\'s part of my responsibilities to mentor beginner Android devs and to spread our technical expertise through tech talks and local conferences such as our local GDG.
+    </string>
     <string name="arctouch_url">https://arctouch.com</string>
 
     <!-- Softplan -->
