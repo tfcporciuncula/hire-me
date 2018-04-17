@@ -1,7 +1,10 @@
 package com.hireme.coverletter
 
+import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.text.Html
+import android.text.Spanned
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -64,7 +67,7 @@ class CoverLetterFragment : Fragment(), CoverLetter.View {
     }
 
     override fun showCoverLetter(coverLetterContent: String) {
-        coverLetterTextView.text = coverLetterContent
+        coverLetterTextView.text = coverLetterContent.fromHtml()
     }
 }
 
@@ -88,4 +91,12 @@ private fun View.fadeIn() {
             visibility = View.VISIBLE
         }
         .start()
+}
+
+private fun String.fromHtml(): Spanned {
+    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+        Html.fromHtml(this, Html.FROM_HTML_MODE_COMPACT)
+    } else {
+        Html.fromHtml(this)
+    }
 }
