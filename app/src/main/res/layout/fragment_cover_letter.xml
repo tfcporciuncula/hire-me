@@ -53,7 +53,7 @@
             android:paddingBottom="@dimen/standard_margin"
             android:paddingEnd="@dimen/standard_margin"
             android:paddingStart="@dimen/standard_margin"
-            android:paddingTop="@dimen/large_margin">
+            android:paddingTop="@dimen/cover_letter_margin_top">
 
             <TextView
                 android:id="@+id/coverLetterTextView"
@@ -81,8 +81,8 @@
         android:id="@+id/hireMeButton"
         android:layout_width="match_parent"
         android:layout_height="@dimen/hire_me_button_height"
-        android:layout_marginEnd="@dimen/large_margin"
-        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginEnd="@dimen/hire_me_button_horizontal_margin"
+        android:layout_marginStart="@dimen/hire_me_button_horizontal_margin"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
