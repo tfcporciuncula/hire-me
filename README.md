@@ -1,5 +1,5 @@
 # Hire me!
-> Download here the APK to try it out: http://bit.do/edRB8
+> Download here the APK to try it out: http://bit.do/hiremeapk
 
 This is my resume app! Humbly inspired by [Blinkist](https://play.google.com/store/apps/details?id=com.blinkslabs.blinkist.android) and originally created for my job application with them.
 
