@@ -21,6 +21,7 @@ class ExternalUrlManager(private val context: Context) {
     private fun openBrowserFor(url: String) {
         val intent = Intent(Intent.ACTION_VIEW).apply {
             data = Uri.parse(url)
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
         }
         context.startActivity(intent)
     }

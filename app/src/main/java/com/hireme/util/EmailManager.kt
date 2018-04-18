@@ -16,6 +16,7 @@ class EmailManager(private val context: Context) {
             data = Uri.parse("mailto:")
             putExtra(Intent.EXTRA_EMAIL, arrayOf(context.getString(R.string.you_are_hired_email)))
             putExtra(Intent.EXTRA_SUBJECT, context.getString(R.string.you_are_hired_subject))
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
         }
 
         intent.resolveActivity(context.packageManager)?.let {
